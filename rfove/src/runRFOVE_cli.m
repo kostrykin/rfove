@@ -36,8 +36,6 @@ AICBIC_SELECTION = 1; %Set AICBIC_SELECTION = 1, to use AIC is selected else BIC
 set(0,'DefaultFigureColormap',jet);
 
 [I] = imread(inputFile);
-GT = imread(inputFile);
-[ GT ] = correctGT(GT);
 
 [IClustTotal,totEll,INITSEG] = runMainAlgo(imgaussfilt(I,2),AICBIC_SELECTION,METHOD,METHODSEG,NeighborhoodSize,0.5,0);
 imwrite(uint16(IClustTotal), outputFile)
