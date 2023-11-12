@@ -1,3 +1,3 @@
 #!/bin/bash
 
-mcc -m src/runRFOVE_cli.m
+mcc -m -d bin src/runRFOVE_cli.m
