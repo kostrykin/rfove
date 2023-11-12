@@ -1,3 +1,6 @@
+[![Build docker image and push to Docker Hub](https://github.com/kostrykin/rfove/actions/workflows/build_docker_image.yml/badge.svg)](https://github.com/kostrykin/rfove/actions/workflows/build_docker_image.yml)
+![Docker Image Version (latest semver)](https://img.shields.io/docker/v/kostrykin/rfove?label=DockerHub%3A)
+
 # rfove
 
 Build image:
