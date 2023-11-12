@@ -26,7 +26,7 @@ addpath(genpath('MatlabCentral_IVC2020'));
 METHOD = 1; 
 METHODSEG = 4;
 global Constraints
-Constraints = [areaUB minAreaMaxAreaRatioUB overlapUB]; 
+Constraints = [str2num(areaUB) str2num(minAreaMaxAreaRatioUB) str2num(overlapUB)]; 
 %Constraints(1) = areaLim ( < 250)
 %Constraints(2) = min area / max area ratio e.g. < 0.1 
 %Constraints(3) = max overlaping > 0.2
@@ -37,7 +37,7 @@ set(0,'DefaultFigureColormap',jet);
 
 [I] = imread(inputFile);
 
-[IClustTotal,totEll,INITSEG] = runMainAlgo(imgaussfilt(I,2),AICBIC_SELECTION,METHOD,METHODSEG,NeighborhoodSize,0.5,0);
+[IClustTotal,totEll,INITSEG] = runMainAlgo(imgaussfilt(I,2),AICBIC_SELECTION,METHOD,METHODSEG,str2num(NeighborhoodSize),0.5,0);
 imwrite(uint16(IClustTotal), outputFile)
  
 close all;
