@@ -7,7 +7,7 @@ This repository is used to build a Docker image of the RFOVE tool described in: 
 
 > RFOVE is completely unsupervised, operates without any assumption or prior knowledge on the object’s shape and extends and improves the Decremental Ellipse Fitting Algorithm (DEFA). Both RFOVE and DEFA solve the multi-ellipse fitting problem by performing model selection that is guided by the minimization of the Akaike Information Criterion on a suitably defined shape complexity measure. However, in contrast to DEFA, RFOVE minimizes an objective function that allows for ellipses with higher degree of overlap and, thus, achieves better ellipse-based shape approximation.
 
-The Docker image uses the [original implementation](https://de.mathworks.com/matlabcentral/fileexchange/74200-cell-segmentation-rfove-method). Also see [LICENSE](https://github.com/kostrykin/rfove/blob/master/rfove/LICENSE).
+The Docker image uses the [original MATLAB implementation](https://de.mathworks.com/matlabcentral/fileexchange/74200-cell-segmentation-rfove-method) and makes it accessible without requiring any dependencies or license keys. Also see [LICENSE](https://github.com/kostrykin/rfove/blob/master/rfove/LICENSE).
 
 ## [Docker instructions]()
 
