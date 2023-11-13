@@ -24,6 +24,8 @@ Either build or pull the image:
 
 Run RFOVE:
 ```bash
-docker run --rm -ti -v /tmp/io:/io kostrykin/rfove /rfove 250 0.1 0.2 201 /io/input.png /io/seg.tiff
+docker run --rm -ti \
+  -v /tmp/io:/io kostrykin/rfove \
+  /rfove 250 0.1 0.2 201 /io/input.png /io/seg.tiff
 ```
 In this example, the image `/tmp/io/input.png` is segmented and the results are written to `/tmp/io/seg.tiff`.
