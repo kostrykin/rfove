@@ -6,3 +6,5 @@ MAINTAINER Leonid Kostrykin <leonid.kostrykin@bioquant.uni-heidelberg.de>
 ADD rfove/bin /rfove-dist
 RUN chmod +x /rfove-dist/runRFOVE_cli
 RUN ln -s /rfove-dist/runRFOVE_cli /rfove
+
+LABEL extra.binaries="/rfove"
